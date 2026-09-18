@@ -1,0 +1,5 @@
+# 仅发布 README 与插件安装包，忽略本地工具 / 缓存目录
+.prism/
+.orbitcode/
+.vscode/
+*.log
