@@ -1,5 +1,6 @@
-# 仅发布 README 与插件安装包，忽略本地工具 / 缓存目录
+# 仅发布 README / LICENSE 等文档；安装包走 GitHub Releases，不入库
 .prism/
 .orbitcode/
 .vscode/
 *.log
+*.vsix

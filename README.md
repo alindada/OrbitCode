@@ -1,5 +1,10 @@
 # OrbitCode — AI Pair Programmer
 
+![version](https://img.shields.io/badge/version-1.0.1-blue)
+![license](https://img.shields.io/github/license/alindada/OrbitCode)
+![VS Code](https://img.shields.io/badge/VS%20Code-%5E1.80.0-007ACC)
+![release](https://img.shields.io/github/v/release/alindada/OrbitCode?include_prereleases&label=download)
+
 An agentic AI coding assistant for **VS Code / Cursor**: sidebar chat, streaming output, inline diff, a built-in tool runtime (file I/O, terminal, LSP, REPL, search) and MCP integration.
 
 Just sign in with a **LLM Gateway** account — models are provided by the gateway, so **you don't need to supply API keys for each vendor yourself**.
@@ -10,7 +15,7 @@ Just sign in with a **LLM Gateway** account — models are provided by the gatew
 
 | Capability | Description |
 |------------|-------------|
-| **Multi-model chat** | Sidebar chat with the model list served by the gateway's `/v1/models`; Claude / GPT / Gemini / Qwen / DeepSeek / Ollama and more, depending on your account's permissions |
+| **Multi-model chat** | Sidebar chat with the model list served by the gateway's `/v1/models`;  Qwen / DeepSeek / Ollama and more, depending on your account's permissions |
 | **Streaming output** | Token-by-token rendering, interruptible and retryable |
 | **Agentic tool chain** | File read/write, terminal commands, REPL, LSP diagnostics/references, web search, skills and subagents — all invoked by the model on its own |
 | **Inline diff & checkpoints** | A diff is generated before any file is modified and can be **Keep** or **Discard**'d; AI edits can also be rolled back in a batch per turn |
@@ -30,14 +35,14 @@ Just sign in with a **LLM Gateway** account — models are provided by the gatew
 
 ### Option 1: Install from VSIX (recommended)
 
-1. Obtain `orbitcode-<version>.vsix`.
+1. Download the latest `orbitcode-<version>.vsix` from the [**Releases**](https://github.com/alindada/OrbitCode/releases/latest) page (this repository is the release channel).
 2. VS Code → Extensions (`Ctrl+Shift+X`) → `…` in the top right → **Install from VSIX…** → select the file.
 3. Once the success notification appears in the bottom right, **reload the window**.
 
-Command-line install:
+Command-line install (replace the version with the one you downloaded):
 
 ```bash
-code --install-extension orbitcode-1.0.0.vsix
+code --install-extension orbitcode-1.0.1.vsix
 ```
 
 ### Option 2: Install from the Marketplace
@@ -173,8 +178,9 @@ Most options can be changed under **Settings** (gear icon) in the sidebar; you c
 
 ## Feedback
 
-- Questions and suggestions: file them via the extension repository's Issues, including the **OrbitCode** output log and reproduction steps.
+- Bugs and feature requests: file them at **https://github.com/alindada/OrbitCode/issues** — please attach the **OrbitCode** output log (**OrbitCode: Open Output Log**) and reproduction steps.
+- Downloads and version history: [**Releases**](https://github.com/alindada/OrbitCode/releases).
 
 ## License
 
-MIT
+[MIT](./LICENSE) © 2026 alindada
